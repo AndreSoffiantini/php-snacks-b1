@@ -3,8 +3,37 @@ Olimpia Milano - Cantù | 55-60 -->
 
 <?php
 
-    $teams = array("Boston Celtics - Los Angeles Clippers", "Los Angeles Lakers - San Antonio Spurs", "Phoenix Suns - Charlotte Hornets");
-    $scores = array("115 - 92", "110 - 108", "132 - 101");
+    $matches = [
+        
+        [
+            "home_team" => "Boston Celtics",
+            "away_team" => "Los Angeles Clippers",
+            "home_team_score" => "115",
+            "away_team_score" => "92"
+        ],
+
+        [
+            "home_team" => "San Antonio Spurs",
+            "away_team" => "Los Angeles Lakers",
+            "home_team_score" => "110",
+            "away_team_score" => "94"
+        ],
+
+        [
+            "home_team" => "Phoenix Suns",
+            "away_team" => "Charlotte Hornets",
+            "home_team_score" => "116",
+            "away_team_score" => "112"
+        ]
+
+    ];
+
+    for ($i=0; $i < count($matches) ; $i++) { 
+        
+       echo $matches[$i]["home_team"] . ' - ' . $matches[$i]["away_team"] . ' | ' . $matches[$i]["home_team_score"] . ' - ' . $matches[$i]["away_team_score"] ;
+       echo "<br>";
+
+    }
 
 ?>
 
@@ -17,12 +46,6 @@ Olimpia Milano - Cantù | 55-60 -->
     <title>Snack 1</title>
 </head>
 <body>
-
-    <?php
-
-        
-
-    ?>
     
 </body>
 </html>
